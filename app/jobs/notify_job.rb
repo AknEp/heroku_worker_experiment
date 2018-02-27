@@ -1,3 +1,5 @@
+require 'net/http'
+
 class NotifyJob < ApplicationJob
   queue_as :default
 
