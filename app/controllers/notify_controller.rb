@@ -1,8 +1,7 @@
 class NotifyController < ApplicationController
   def ping
-    @notification = Notification.new
-    @notification.save!
-    NotifyJob.perform_later
+    @time = Time.zone.now.to_s
+    NotifyJob.perform_later(@time)
   end
 
 end
