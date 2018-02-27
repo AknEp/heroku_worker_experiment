@@ -1,3 +1,7 @@
 if defined?(Resque)
-  Resque.redis = ENV['REDIS_URL'] || 'localhost:6379'
+  begin
+    Resque.redis = ENV['REDIS_URL'] || 'localhost:6379'
+  rescue => e
+    puts e
+  end
 end
