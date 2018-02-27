@@ -1,5 +1,5 @@
 class NotifyController < ApplicationController
-  def create
+  def ping
     @notification = Notification.new
     @notification.save!
     NotifyJob.perform_later
