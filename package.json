@@ -1,0 +1,5 @@
+{
+  "name": "heroku_worker_experiment",
+  "private": true,
+  "dependencies": {}
+}
