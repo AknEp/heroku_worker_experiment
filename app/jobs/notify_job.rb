@@ -3,7 +3,7 @@ class NotifyJob < ApplicationJob
 
   def perform(param)
     # sleep X seconds
-    sleep 60
+    sleep 1
     # notify to slack
 
     params = {
